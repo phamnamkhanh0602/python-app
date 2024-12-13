@@ -107,7 +107,7 @@
      <string notr="true">color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>dont have an account?</string>
+     <string>Dont have an account?</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushSignup">

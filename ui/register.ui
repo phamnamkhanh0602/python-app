@@ -78,7 +78,7 @@
      <string/>
     </property>
     <property name="placeholderText">
-     <string>enter your username</string>
+     <string>Enter your username</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEmail">
@@ -97,7 +97,7 @@
      <string/>
     </property>
     <property name="placeholderText">
-     <string>enter your email</string>
+     <string>Enter your email</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="linePassword">
@@ -119,14 +119,14 @@
      <enum>QLineEdit::EchoMode::Password</enum>
     </property>
     <property name="placeholderText">
-     <string>enter your password</string>
+     <string>Enter your password</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushSignup">
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>370</y>
+      <y>380</y>
       <width>281</width>
       <height>51</height>
      </rect>
@@ -135,7 +135,7 @@
      <string notr="true">background-color:#202c3c;</string>
     </property>
     <property name="text">
-     <string>sign up</string>
+     <string>Sign up</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushLogin">
@@ -151,7 +151,7 @@
      <string notr="true">background-color:#202c3c;</string>
     </property>
     <property name="text">
-     <string>already have an account</string>
+     <string>Already have an account</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushEye1">
@@ -178,7 +178,7 @@
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>320</y>
+      <y>330</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -198,7 +198,7 @@
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>320</y>
+      <y>330</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -213,7 +213,7 @@
      <enum>QLineEdit::EchoMode::Password</enum>
     </property>
     <property name="placeholderText">
-     <string>enter your password</string>
+     <string>Enter your password</string>
     </property>
    </widget>
    <zorder>label</zorder>
