@@ -49,7 +49,7 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../img/extreme-weather.png</normaloff>../../img/extreme-weather.png</iconset>
+       <normaloff>../img/extreme-weather.png</normaloff>../img/extreme-weather.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -72,7 +72,7 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../img/main-menu.png</normaloff>../../img/main-menu.png</iconset>
+       <normaloff>../img/main-menu.png</normaloff>../img/main-menu.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -95,7 +95,7 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../img/user.png</normaloff>../../img/user.png</iconset>
+       <normaloff>../img/user.png</normaloff>../img/user.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -118,7 +118,7 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+       <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -141,7 +141,7 @@ border-radius:10px</string>
      <number>3</number>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="widget_2" native="true">
@@ -169,7 +169,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/clouds.png</pixmap>
+        <pixmap>../img/clouds.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -188,7 +188,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (2).png</pixmap>
+        <pixmap>../img/sun (2).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -207,7 +207,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -226,7 +226,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -245,7 +245,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -264,7 +264,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (2).png</pixmap>
+        <pixmap>../img/sun (2).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -490,7 +490,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/temperature.png</pixmap>
+        <pixmap>../img/temperature.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -509,7 +509,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/drop.png</pixmap>
+        <pixmap>../img/drop.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -528,7 +528,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/wind (1).png</pixmap>
+        <pixmap>../img/wind (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -547,7 +547,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun.png</pixmap>
+        <pixmap>../img/sun.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -631,7 +631,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -650,7 +650,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -669,7 +669,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -688,7 +688,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/clouds.png</pixmap>
+        <pixmap>../img/clouds.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -707,7 +707,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/clouds.png</pixmap>
+        <pixmap>../img/clouds.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -726,7 +726,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/storm (1).png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -745,7 +745,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/cloudy.png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1228,7 +1228,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1280,7 +1280,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1338,7 +1338,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1373,7 +1373,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/cloudy.png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1431,7 +1431,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1466,7 +1466,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1524,7 +1524,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1559,7 +1559,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/cloudy.png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1617,7 +1617,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1640,7 +1640,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1659,7 +1659,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1678,7 +1678,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1697,7 +1697,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1716,7 +1716,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1735,7 +1735,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/clouds.png</pixmap>
+       <pixmap>../img/clouds.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1754,7 +1754,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (2).png</pixmap>
+       <pixmap>../img/sun (2).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -2269,7 +2269,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/user.png</pixmap>
+        <pixmap>../img/user.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2296,7 +2296,7 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>270</y>
+        <y>250</y>
         <width>691</width>
         <height>31</height>
        </rect>
@@ -2312,7 +2312,7 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>70</x>
-        <y>330</y>
+        <y>300</y>
         <width>691</width>
         <height>31</height>
        </rect>
@@ -2324,27 +2324,11 @@ border-radius:10px</string>
        <string>Password</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_17">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>390</y>
-        <width>691</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:#202c3c;</string>
-      </property>
-      <property name="text">
-       <string>Change password</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_9">
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>450</y>
+        <y>500</y>
         <width>281</width>
         <height>41</height>
        </rect>
@@ -2354,6 +2338,54 @@ border-radius:10px</string>
       </property>
       <property name="text">
        <string>User favorite city</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_84">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>400</y>
+        <width>691</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_91">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>450</y>
+        <width>691</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
+      <property name="text">
+       <string>Day of birth</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>350</y>
+        <width>691</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
+      <property name="text">
+       <string>address</string>
       </property>
      </widget>
     </widget>
@@ -2383,7 +2415,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/cloudy.png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2441,7 +2473,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2476,7 +2508,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2534,7 +2566,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2569,7 +2601,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/sun (1).png</pixmap>
+        <pixmap>../img/sun (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2627,7 +2659,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2662,7 +2694,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../img/cloudy.png</pixmap>
+        <pixmap>../img/cloudy.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2720,7 +2752,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../../img/bookmark.png</normaloff>../../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2848,7 +2880,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -2867,7 +2899,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -2902,7 +2934,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (2).png</pixmap>
+       <pixmap>../img/sun (2).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -2979,7 +3011,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3058,7 +3090,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/clouds.png</pixmap>
+       <pixmap>../img/clouds.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3228,7 +3260,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3308,7 +3340,7 @@ border-radius:10px</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../img/sun (1).png</pixmap>
+       <pixmap>../img/sun (1).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
