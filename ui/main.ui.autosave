@@ -717,7 +717,7 @@ border-radius:10px</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>430</y>
+         <y>420</y>
          <width>71</width>
          <height>61</height>
         </rect>
@@ -735,7 +735,7 @@ border-radius:10px</string>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>70</x>
          <y>360</y>
          <width>71</width>
          <height>61</height>
