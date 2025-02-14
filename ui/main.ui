@@ -38,32 +38,9 @@ border-radius:10px</string>
     <widget class="QPushButton" name="nav_main_btn">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>80</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../img/extreme-weather.png</normaloff>../img/extreme-weather.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>50</width>
-       <height>50</height>
-      </size>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="nav_search_btn">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>150</y>
-       <width>71</width>
+       <x>10</x>
+       <y>90</y>
+       <width>51</width>
        <height>51</height>
       </rect>
      </property>
@@ -72,7 +49,30 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../img/main-menu.png</normaloff>../img/main-menu.png</iconset>
+       <normaloff>../img/weather-app.png</normaloff>../img/weather-app.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nav_search_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/menu (1).png</normaloff>../img/menu (1).png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -84,10 +84,10 @@ border-radius:10px</string>
     <widget class="QPushButton" name="nav_account_btn">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>71</width>
-       <height>61</height>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
@@ -95,12 +95,12 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../img/user.png</normaloff>../img/user.png</iconset>
+       <normaloff>../img/user (1).png</normaloff>../img/user (1).png</iconset>
      </property>
      <property name="iconSize">
       <size>
-       <width>50</width>
-       <height>50</height>
+       <width>45</width>
+       <height>45</height>
       </size>
      </property>
     </widget>
@@ -108,7 +108,7 @@ border-radius:10px</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>220</y>
+       <y>310</y>
        <width>71</width>
        <height>51</height>
       </rect>
@@ -118,12 +118,35 @@ border-radius:10px</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+       <normaloff>../img/bookmark (1).png</normaloff>../img/bookmark (1).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>50</width>
        <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nav_map_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/map_17142383.png</normaloff>../img/map_17142383.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>55</width>
+       <height>55</height>
       </size>
      </property>
     </widget>
@@ -141,7 +164,7 @@ border-radius:10px</string>
      <number>3</number>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="widget_2" native="true">
@@ -717,7 +740,7 @@ border-radius:10px</string>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>430</y>
+         <y>420</y>
          <width>71</width>
          <height>61</height>
         </rect>
@@ -726,7 +749,7 @@ border-radius:10px</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../img/cloudy.png</pixmap>
+        <pixmap>../img/storm (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -735,7 +758,7 @@ border-radius:10px</string>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>70</x>
          <y>360</y>
          <width>71</width>
          <height>61</height>
@@ -936,7 +959,7 @@ border-radius:10px</string>
       <widget class="QLabel" name="label_41">
        <property name="geometry">
         <rect>
-         <x>140</x>
+         <x>130</x>
          <y>440</y>
          <width>71</width>
          <height>31</height>
@@ -1338,7 +1361,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (2).png</normaloff>../img/bookmark (2).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1431,7 +1454,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (2).png</normaloff>../img/bookmark (2).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1524,7 +1547,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (2).png</normaloff>../img/bookmark (2).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1617,7 +1640,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (2).png</normaloff>../img/bookmark (2).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2063,9 +2086,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>600</x>
-        <y>380</y>
+        <y>370</y>
         <width>61</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2076,9 +2099,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>610</x>
-        <y>450</y>
+        <y>440</y>
         <width>51</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2089,9 +2112,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>610</x>
-        <y>520</y>
+        <y>510</y>
         <width>51</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2102,9 +2125,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>380</y>
+        <y>370</y>
         <width>61</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2220,9 +2243,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>450</y>
+        <y>440</y>
         <width>61</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2233,9 +2256,9 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>520</y>
+        <y>510</y>
         <width>61</width>
-        <height>31</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
@@ -2260,16 +2283,16 @@ border-radius:10px</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>20</y>
+         <y>10</y>
          <width>141</width>
-         <height>121</height>
+         <height>131</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../img/user.png</pixmap>
+        <pixmap>../img/user (1).png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2389,6 +2412,416 @@ border-radius:10px</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>581</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Sreach for city</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>561</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_11" native="true">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>60</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;
+</string>
+      </property>
+      <widget class="QLabel" name="label_92">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../img/cloudy.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_96">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Bilbao</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_100">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>10:23</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_106">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>27°</string>
+       </property>
+      </widget>
+      <zorder>label_92</zorder>
+      <zorder>label_100</zorder>
+      <zorder>label_96</zorder>
+      <zorder>label_106</zorder>
+     </widget>
+     <widget class="QWidget" name="widget_12" native="true">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>140</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;
+</string>
+      </property>
+      <widget class="QLabel" name="label_93">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../img/sun (1).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_97">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Barcelona</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_101">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>10:23</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_105">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>29°</string>
+       </property>
+      </widget>
+      <zorder>label_93</zorder>
+      <zorder>label_101</zorder>
+      <zorder>label_97</zorder>
+      <zorder>label_105</zorder>
+     </widget>
+     <widget class="QWidget" name="widget_13" native="true">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>220</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;
+</string>
+      </property>
+      <widget class="QLabel" name="label_94">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../img/sun (1).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_98">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Madrid</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_102">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>10:23</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_104">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>31°</string>
+       </property>
+      </widget>
+      <zorder>label_94</zorder>
+      <zorder>label_102</zorder>
+      <zorder>label_98</zorder>
+      <zorder>label_104</zorder>
+     </widget>
+     <widget class="QWidget" name="widget_14" native="true">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>300</y>
+        <width>261</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;
+</string>
+      </property>
+      <widget class="QLabel" name="label_95">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>71</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../img/sun (2).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_99">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Malaga</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_103">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>10:23</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_107">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>33°</string>
+       </property>
+      </widget>
+      <zorder>label_95</zorder>
+      <zorder>label_103</zorder>
+      <zorder>label_99</zorder>
+      <zorder>label_107</zorder>
+     </widget>
+    </widget>
     <widget class="QWidget" name="page_4">
      <widget class="QWidget" name="widget_26" native="true">
       <property name="geometry">
@@ -2473,7 +2906,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (4).png</normaloff>../img/bookmark (4).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2566,7 +2999,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (4).png</normaloff>../img/bookmark (4).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2659,7 +3092,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (4).png</normaloff>../img/bookmark (4).png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -2752,7 +3185,7 @@ border-radius:10px</string>
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/bookmark.png</normaloff>../img/bookmark.png</iconset>
+         <normaloff>../img/bookmark (4).png</normaloff>../img/bookmark (4).png</iconset>
        </property>
        <property name="iconSize">
         <size>
