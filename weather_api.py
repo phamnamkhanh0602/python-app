@@ -1,9 +1,8 @@
 import requests
+
 api_key = "5634849698f284eba828945eec5edfee"
 
-
-city = "Aomori"
-url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
-print(url)
-x = requests.get(url)
-print(x.json())
+def get_weather_by_name(name):
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={name}&appid={api_key}&units=metric"
+    x = requests.get(url)
+    return x.json()

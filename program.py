@@ -1,9 +1,9 @@
-from PyQt6.QtWidgets import QMainWindow,QApplication,QLineEdit,QMessageBox,QPushButton,QStackedWidget
-from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
 from PyQt6 import uic
 import sys
-import database
-
+import database 
+from weather_api import *
 class Alert(QMessageBox):
    def error_message(self,message):
       self.setIcon(QMessageBox.Icon.Critical)
@@ -169,14 +169,39 @@ class MainWindow(QMainWindow):
       self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(2))
       self.nav_save_btn.clicked.connect(lambda: self.navigateScreen(3))
       self.nav_search_btn.clicked.connect(lambda: self.navigateScreen(1))
+      
+      self.load_weather()
 
       
    def navigateScreen(self, page:int):
       self.stackedWidget.setCurrentIndex(page)
+      
+   def load_weather(self):
+      self.lb_city_name = self.findChild(QLabel,'lb_city_name')
+      self.lb_cloud = self.findChild(QLabel,'lb_cloud')
+      self.lb_weather_img = self.findChild(QLabel,'lb_weather_img')
+      self.lb_humidity = self.findChild(QLabel,'lb_humidity')
+      self.lb_visibility = self.findChild(QLabel,'lb_visibility')
+      self.lb_wind = self.findChild(QLabel,'lb_wind')
+      self.lb_temp = self.findChild(QLabel,'lb_temp')
+      self.lb_weather_name = self.findChild(QLabel,'lb_weather_name')
+      self.lb_weather_desc = self.findChild(QLabel,'lb_weather_desc')
+      
+      data = get_weather_by_name("Ha Noi")
+      self.lb_city_name.setText(data["name"])
+      self.lb_weather_name.setText(data["weather"][0]["main"])
+      visibility = data["visibility"] /1000
+      self.lb_visibility.setText(f"{visibility} km")
+      self.lb_weather_desc.setText(data["weather"][0]["description"])
+      self.lb_temp.setText(f"{data["main"]["temp"]} ℃")
+      self.lb_humidity.setText(f"{data["main"]["humidity"]} %")
+      self.lb_cloud.setText(f"{data["clouds"]["all"]} %")
+      self.lb_wind.setText(f"{data["wind"]["speed"]} km/h")
 
-    
 if __name__ == '__main__':
    app = QApplication(sys.argv)
-   login = Login()
+   # login = Login()
+   # login.show()
+   login = MainWindow(1)
    login.show()
    app.exec()
