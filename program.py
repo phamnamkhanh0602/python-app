@@ -195,6 +195,7 @@ class MainWindow(QMainWindow):
       super().__init__()
       uic.loadUi('ui/main.ui',self)
       self.user_id = user_id
+      self.user = database.find_user_by_id(user_id)
       
       self.nav_main_btn = self.findChild(QPushButton,'nav_main_btn')
       self.nav_account_btn = self.findChild(QPushButton,'nav_account_btn')
@@ -203,6 +204,7 @@ class MainWindow(QMainWindow):
       self.btn_search = self.findChild(QPushButton,'btn_search')
       self.txt_search = self.findChild(QLineEdit,'txt_search')
       self.weather_container = self.findChild(QWidget, 'weather_container')
+      self.btn_avatar = self.findChild(QPushButton,'btn_avatar')
       
       # Clear any existing layout
       if self.weather_container.layout():
@@ -226,6 +228,7 @@ class MainWindow(QMainWindow):
       self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(2))
       self.nav_save_btn.clicked.connect(lambda: self.navigateScreen(3))
       self.nav_search_btn.clicked.connect(lambda: self.navigateScreen(1))
+      self.btn_avatar.clicked.connect(self.update_avatar)
       self.btn_search.clicked.connect(self.search_weather)
       
       self.load_weather()
@@ -237,6 +240,20 @@ class MainWindow(QMainWindow):
       
    def navigateScreen(self, page:int):
       self.stackedWidget.setCurrentIndex(page)
+      
+   def load_user_info(self):
+      self.lb_name = self.findChild(QLabel, 'lb_name')
+      self.lb_email = self.findChild(QLabel,'lb_email')
+      self.lb_name.setText(self.user["name"])
+      self.lb_email.setText(self.user["email"])
+      self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+      
+   def update_avatar(self):
+      file,_ = QFileDialog.getOpenFileName(self,"Select Image","","Image Files(*.png *.jpg *jpeg *.bmp)")
+      if file:
+         self.user["avatar"] = file
+         self.btn_avatar.setIcon(QIcon(file))
+         database.update_user_avatar(self.user_id, file)
       
    def load_weather(self):
       self.lb_city_name = self.findChild(QLabel,'lb_city_name')
@@ -339,6 +356,6 @@ if __name__ == '__main__':
    app = QApplication(sys.argv)
    # login = Login()
    # login.show()
-   login = MainWindow(1)
+   login = MainWindow(11)
    login.show()
    app.exec()
