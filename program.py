@@ -4,6 +4,8 @@ from PyQt6 import uic
 import sys
 import database 
 from weather_api import *
+from datetime import datetime
+
 class Alert(QMessageBox):
    def error_message(self,message):
       self.setIcon(QMessageBox.Icon.Critical)
@@ -77,6 +79,43 @@ class Login(QMainWindow):
       self.mainWindow = MainWindow(user_id)
       self.mainWindow.show()
       self.close()
+      
+class FutureWeatherItem(QWidget):
+   def __init__(self, description, time, icon):
+      super().__init__()
+      uic.loadUi('ui/future_forecase_item.ui', self)
+      
+      self.setMinimumWidth(210)
+      self.setMinimumHeight(45)
+      
+      self.lb_description = self.findChild(QLabel,'lb_description')
+      self.lb_time = self.findChild(QLabel,'lb_time')
+      self.lb_img = self.findChild(QLabel,'lb_img')
+      
+      self.lb_description.setText(description)
+      self.lb_time.setText(time)
+      self.lb_img.setPixmap(QPixmap(f"weather_icons/{icon}.png"))
+      
+      # Add horizontal line
+      line = QFrame(self)
+      line.setFrameShape(QFrame.Shape.HLine)
+      line.setFrameShadow(QFrame.Shadow.Sunken)
+      line.setStyleSheet("background-color: #1E90FF;")  # Blue color for the line
+      line.setFixedHeight(2)
+      
+      # Get the existing layout
+      layout = self.layout()
+      if not layout:
+         layout = QVBoxLayout(self)
+         layout.setSpacing(10)  # Space between elements inside the item
+         layout.setContentsMargins(15, 10, 15, 10)  # Left, Top, Right, Bottom margins
+      
+      # Add line to bottom with some spacing
+      layout.addSpacing(5)  # Space before line
+      layout.addWidget(line)
+      layout.addSpacing(5)  # Space after line
+      
+      print(f"FutureWeatherItem created: {time} - {description}")
       
 class Register(QMainWindow):
    def __init__(self):
@@ -161,17 +200,40 @@ class MainWindow(QMainWindow):
       self.nav_account_btn = self.findChild(QPushButton,'nav_account_btn')
       self.nav_save_btn = self.findChild(QPushButton,'nav_save_btn')
       self.nav_search_btn = self.findChild(QPushButton,'nav_search_btn')
+      self.btn_search = self.findChild(QPushButton,'btn_search')
+      self.txt_search = self.findChild(QLineEdit,'txt_search')
+      self.weather_container = self.findChild(QWidget, 'weather_container')
+      
+      # Clear any existing layout
+      if self.weather_container.layout():
+         old_layout = self.weather_container.layout()
+         while old_layout.count():
+            item = old_layout.takeAt(0)
+            if item.widget():
+               item.widget().deleteLater()
+         QWidget().setLayout(old_layout)
+      
+      # Initialize weather container layout
+      layout = QVBoxLayout()
+      layout.setSpacing(0)
+      layout.setContentsMargins(0, 0, 0, 0)
+      self.weather_container.setLayout(layout)
+      
       self.stackedWidget = self.findChild(QStackedWidget,'stackedWidget')
       self.stackedWidget.setCurrentIndex(0)
-      
       
       self.nav_main_btn.clicked.connect(lambda: self.navigateScreen(0))
       self.nav_account_btn.clicked.connect(lambda: self.navigateScreen(2))
       self.nav_save_btn.clicked.connect(lambda: self.navigateScreen(3))
       self.nav_search_btn.clicked.connect(lambda: self.navigateScreen(1))
+      self.btn_search.clicked.connect(self.search_weather)
       
       self.load_weather()
-
+      
+   def search_weather(self):
+      name = self.txt_search.text()
+      if self.load_today_weather(name):
+         self.load_weather_forecast(name)
       
    def navigateScreen(self, page:int):
       self.stackedWidget.setCurrentIndex(page)
@@ -187,16 +249,91 @@ class MainWindow(QMainWindow):
       self.lb_weather_name = self.findChild(QLabel,'lb_weather_name')
       self.lb_weather_desc = self.findChild(QLabel,'lb_weather_desc')
       
-      data = get_weather_by_name("Ha Noi")
+      self.load_today_weather("SaiGon")
+      self.load_weather_forecast("SaiGon")
+
+   def load_today_weather(self, name):
+      data = get_weather_by_name(name)
+      if data["cod"] != 200:
+         msg = Alert()
+         msg.error_message(data["message"])
+         return False
+
       self.lb_city_name.setText(data["name"])
       self.lb_weather_name.setText(data["weather"][0]["main"])
       visibility = data["visibility"] /1000
       self.lb_visibility.setText(f"{visibility} km")
       self.lb_weather_desc.setText(data["weather"][0]["description"])
-      self.lb_temp.setText(f"{data["main"]["temp"]} ℃")
-      self.lb_humidity.setText(f"{data["main"]["humidity"]} %")
-      self.lb_cloud.setText(f"{data["clouds"]["all"]} %")
-      self.lb_wind.setText(f"{data["wind"]["speed"]} km/h")
+      temp = data["main"]["temp"]
+      self.lb_temp.setText(f"{temp} ℃")
+      humidity = data["main"]["humidity"]
+      self.lb_humidity.setText(f"{humidity} %")
+      cloud = data["clouds"]["all"]
+      self.lb_cloud.setText(f"{cloud} %")
+      wind = data["wind"]["speed"]
+      self.lb_wind.setText(f"{wind} km/h")
+      return True
+
+   def load_weather_forecast(self, name):
+      time_labels = [self.findChild(QLabel, f'lb_time_{i+1}') for i in range(6)]
+      img_labels = [self.findChild(QLabel, f'lb_img_{i+1}') for i in range(6)]
+      temp_labels = [self.findChild(QLabel, f'lb_temp_{i+1}') for i in range(6)]
+      
+      data = get_weather_forecast_by_name(name)
+      for i in range(6):
+         dt = data["list"][i]["dt_txt"]
+         date_obj = datetime.strptime(dt, "%Y-%m-%d %H:%M:%S")
+         formatted_date = date_obj.strftime("%a %m/%d\n%H:%M")
+         time_labels[i].setText(formatted_date)
+         img_labels[i].setPixmap(QPixmap(f"weather_icons/{data['list'][i]['weather'][0]['icon']}.png"))
+         temp_labels[i].setText(f"{data['list'][i]['main']['temp']} ℃")
+
+      # Clear any existing layout
+      if self.weather_container.layout():
+         old_layout = self.weather_container.layout()
+         while old_layout.count():
+            item = old_layout.takeAt(0)
+            if item.widget():
+               item.widget().deleteLater()
+      
+      # Create and add weather items
+      weather_items = self.create_weather_list(data)
+      for item in weather_items:
+         self.weather_container.layout().addWidget(item)
+
+   def create_weather_list(self, data):
+      weather_items = []
+      
+      # Get the time from first forecast
+      first_dt = data["list"][0]["dt_txt"]
+      first_date = datetime.strptime(first_dt, "%Y-%m-%d %H:%M:%S")
+      target_hour = first_date.hour
+      
+      # Keep track of days we've seen
+      seen_days = set()
+      
+      # Go through all forecasts
+      for forecast in data["list"]:
+         dt = forecast["dt_txt"]
+         date_obj = datetime.strptime(dt, "%Y-%m-%d %H:%M:%S")
+         
+         # Only process if it's at our target hour and we haven't seen this day yet
+         if date_obj.hour == target_hour and date_obj.date() not in seen_days:
+            seen_days.add(date_obj.date())
+            
+            time_str = date_obj.strftime("%a")  # Day name
+            description = forecast["weather"][0]["main"]
+            icon = forecast["weather"][0]["icon"]
+            
+            # Create weather item
+            weather_item = FutureWeatherItem(description, time_str, icon)
+            weather_items.append(weather_item)
+            
+            # Stop if we have 7 days
+            if len(weather_items) >= 7:
+               break
+      
+      return weather_items
 
 if __name__ == '__main__':
    app = QApplication(sys.argv)
