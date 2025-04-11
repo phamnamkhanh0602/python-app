@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="ngay_thang_gio">
+  <widget class="QLabel" name="lb_time">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -26,7 +26,7 @@
     <string>22/11 5h</string>
    </property>
   </widget>
-  <widget class="QLabel" name="thoi_tiet">
+  <widget class="QLabel" name="lb_img">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -45,7 +45,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="mo_ta_thoi_tiet">
+  <widget class="QLabel" name="lb_description">
    <property name="geometry">
     <rect>
      <x>130</x>
