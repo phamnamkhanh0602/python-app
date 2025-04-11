@@ -88,14 +88,6 @@ class FutureWeatherItem(QWidget):
       self.setMinimumWidth(210)
       self.setMinimumHeight(45)
       
-      # Set padding for the widget
-      self.setStyleSheet("""
-         QWidget {
-            padding: 10px;
-            background-color: transparent;
-         }
-      """)
-      
       self.lb_description = self.findChild(QLabel,'lb_description')
       self.lb_time = self.findChild(QLabel,'lb_time')
       self.lb_img = self.findChild(QLabel,'lb_img')
