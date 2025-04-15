@@ -6,8 +6,9 @@ def get_weather_by_name(name):
     x = requests.get(url)
     return x.json()
 
-# 7 day weather forecast
+# 5 day weather forecast
 def get_weather_forecast_by_name(name):
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={name}&appid={api_key}&units=metric"
     x = requests.get(url)
     return x.json()
+
