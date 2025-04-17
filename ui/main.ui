@@ -838,7 +838,7 @@ border-radius:10px</string>
         </rect>
        </property>
        <property name="text">
-        <string>7- day forecast</string>
+        <string>5- day forecast</string>
        </property>
       </widget>
       <widget class="QWidget" name="weather_container" native="true">
@@ -990,13 +990,20 @@ border-radius:10px</string>
         <height>31</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
       <property name="text">
-       <string>Search</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../img/search.png</normaloff>../img/search.png</iconset>
       </property>
       <property name="iconSize">
        <size>
-        <width>45</width>
-        <height>45</height>
+        <width>20</width>
+        <height>20</height>
        </size>
       </property>
      </widget>
@@ -1013,6 +1020,9 @@ border-radius:10px</string>
      <zorder>btn_search</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <widget class="QWidget" name="widget_9" native="true">
       <property name="geometry">
        <rect>
@@ -1059,7 +1069,7 @@ border-radius:10px</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color:#202c3c;</string>
       </property>
       <property name="text">
        <string>Name</string>
@@ -1100,7 +1110,7 @@ border-radius:10px</string>
      <widget class="QDateEdit" name="d_dob">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>270</x>
         <y>430</y>
         <width>110</width>
         <height>29</height>
@@ -1110,7 +1120,7 @@ border-radius:10px</string>
      <widget class="QComboBox" name="cb_gender">
       <property name="geometry">
        <rect>
-        <x>260</x>
+        <x>270</x>
         <y>370</y>
         <width>82</width>
         <height>28</height>
@@ -1174,11 +1184,14 @@ border-radius:10px</string>
      <widget class="QPushButton" name="btn_update_info">
       <property name="geometry">
        <rect>
-        <x>280</x>
+        <x>340</x>
         <y>500</y>
         <width>100</width>
         <height>32</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
       </property>
       <property name="text">
        <string>Update</string>
@@ -1216,6 +1229,32 @@ border-radius:10px</string>
        <string>Day of birth</string>
       </property>
      </widget>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>771</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#202c3c;</string>
+      </property>
+     </widget>
+     <zorder>widget_5</zorder>
+     <zorder>widget_9</zorder>
+     <zorder>lb_name</zorder>
+     <zorder>lb_email</zorder>
+     <zorder>lb_address</zorder>
+     <zorder>d_dob</zorder>
+     <zorder>cb_gender</zorder>
+     <zorder>txt_name</zorder>
+     <zorder>txt_email</zorder>
+     <zorder>txt_address</zorder>
+     <zorder>btn_update_info</zorder>
+     <zorder>lb_address_2</zorder>
+     <zorder>lb_address_3</zorder>
     </widget>
     <widget class="QWidget" name="page_4">
      <widget class="QWidget" name="widget_15" native="true">
@@ -1330,7 +1369,7 @@ border-radius:10px</string>
      <x>0</x>
      <y>0</y>
      <width>972</width>
-     <height>37</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
