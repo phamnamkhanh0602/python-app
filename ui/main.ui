@@ -278,13 +278,13 @@ border-radius:10px</string>
         <rect>
          <x>20</x>
          <y>30</y>
-         <width>80</width>
+         <width>81</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -299,13 +299,13 @@ border-radius:10px</string>
         <rect>
          <x>115</x>
          <y>30</y>
-         <width>80</width>
+         <width>91</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -315,15 +315,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_time_3">
        <property name="geometry">
         <rect>
-         <x>215</x>
+         <x>200</x>
          <y>30</y>
-         <width>80</width>
+         <width>91</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -333,15 +333,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_time_4">
        <property name="geometry">
         <rect>
-         <x>305</x>
+         <x>300</x>
          <y>30</y>
-         <width>80</width>
+         <width>91</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -351,15 +351,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_time_5">
        <property name="geometry">
         <rect>
-         <x>392</x>
+         <x>390</x>
          <y>30</y>
-         <width>80</width>
+         <width>91</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -369,15 +369,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_time_6">
        <property name="geometry">
         <rect>
-         <x>490</x>
+         <x>480</x>
          <y>30</y>
-         <width>80</width>
+         <width>91</width>
          <height>40</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="text">
@@ -467,15 +467,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_1">
        <property name="geometry">
         <rect>
-         <x>25</x>
+         <x>20</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -488,15 +488,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_2">
        <property name="geometry">
         <rect>
-         <x>120</x>
+         <x>110</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -509,15 +509,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_3">
        <property name="geometry">
         <rect>
-         <x>215</x>
+         <x>210</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -530,15 +530,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_4">
        <property name="geometry">
         <rect>
-         <x>305</x>
+         <x>300</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -551,15 +551,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_5">
        <property name="geometry">
         <rect>
-         <x>395</x>
+         <x>390</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
@@ -572,15 +572,15 @@ border-radius:10px</string>
       <widget class="QLabel" name="lb_temp_6">
        <property name="geometry">
         <rect>
-         <x>490</x>
+         <x>480</x>
          <y>105</y>
-         <width>71</width>
+         <width>81</width>
          <height>31</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>11</pointsize>
+         <pointsize>10</pointsize>
         </font>
        </property>
        <property name="styleSheet">
