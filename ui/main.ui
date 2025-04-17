@@ -126,7 +126,7 @@ border-radius:10px</string>
      <number>3</number>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="widget_2" native="true">
@@ -958,29 +958,6 @@ border-radius:10px</string>
        <string>TextLabel</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/bookmark (2).png</normaloff>../img/bookmark (2).png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>35</width>
-        <height>35</height>
-       </size>
-      </property>
-     </widget>
      <widget class="QPushButton" name="btn_search">
       <property name="geometry">
        <rect>
@@ -1007,17 +984,6 @@ border-radius:10px</string>
        </size>
       </property>
      </widget>
-     <zorder>pushButton</zorder>
-     <zorder>widget_2</zorder>
-     <zorder>widget_3</zorder>
-     <zorder>widget_4</zorder>
-     <zorder>txt_search</zorder>
-     <zorder>lb_city_name</zorder>
-     <zorder>lb_temp</zorder>
-     <zorder>lb_weather_img</zorder>
-     <zorder>lb_weather_name</zorder>
-     <zorder>lb_weather_desc</zorder>
-     <zorder>btn_search</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <property name="styleSheet">
