@@ -1112,7 +1112,7 @@ border-radius:10px</string>
        <rect>
         <x>270</x>
         <y>430</y>
-        <width>110</width>
+        <width>121</width>
         <height>29</height>
        </rect>
       </property>
@@ -1122,7 +1122,7 @@ border-radius:10px</string>
        <rect>
         <x>270</x>
         <y>370</y>
-        <width>82</width>
+        <width>121</width>
         <height>28</height>
        </rect>
       </property>
