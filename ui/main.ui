@@ -1121,7 +1121,7 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>270</x>
-        <y>370</y>
+        <y>380</y>
         <width>121</width>
         <height>28</height>
        </rect>
